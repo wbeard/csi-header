@@ -1,0 +1,22 @@
+@import "positions"
+@import "icons"
+
+pull-right()
+	float right
+
+inline-block()
+	display inline-block
+	*display inline
+	zoom 1
+	
+close()
+	width 16px
+	height 16px
+	display block
+	absolute(top, right)
+	padding 5px
+	background url(close-icon) center center no-repeat
+	cursor pointer
+	&:hover
+		background url(close-icon-hover) center center no-repeat
+	

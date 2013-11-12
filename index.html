@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="styles/main.css" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles/glyphicons/css/glyphicons.css" />
+</head>
+<body class="shadow_overlay">
+	<div class="toolbar">
+		<div class="toolbar__group">
+			<div class="apps toolbar__group__unit">
+				<a href="#" class="toolbar__group__unit__link toolbar__group__unit__link--logo">
+					<img class="toolbar__group__unit__link__img" src="img/csiLogo.png" />
+					Dashboard
+				</a>
+			</div>
+		</div>
+		<div class="toolbar__group toolbar__group--right">
+				<div class="apps toolbar__group__unit">
+					<a href="#" class="toolbar__group__unit__link"><i class="glyphicons-icon show_big_thumbnails toolbar__group__unit__link__icon"></i>Apps</a>
+					<i class="fa fa-caret-up fa-3x toolbar__group__unit__indicator toolbar__group__unit__indicator--off"></i>
+					<div class="toolbar__group__unit__dropDownMenu toolbar__group__unit__dropDownMenu--off toolbar__group__unit__dropDownMenu--apps">
+					</div>
+				</div>
+				<div class="settings toolbar__group__unit">
+					<a href="#" class="toolbar__group__unit__link"><i class="glyphicons-icon cogwheel toolbar__group__unit__link__icon"></i> Settings</a>
+					<i class="fa fa-caret-up fa-3x toolbar__group__unit__indicator toolbar__group__unit__indicator--off"></i>
+					<div class="toolbar__group__unit__dropDownMenu toolbar__group__unit__dropDownMenu--off toolbar__group__unit__dropDownMenu--settings">
+					</div>
+				</div>
+				<div class="user toolbar__group__unit">
+					<a href="#" class="toolbar__group__unit__link toolbar__group__unit__link--avatar">
+						<img class="toolbar__group__unit__link--avatar__image toolbar__group__unit__link__img" src="https://s3.amazonaws.com/uifaces/faces/twitter/flashmurphy/128.jpg" />
+					</a>
+					<i class="fa fa-caret-up fa-3x toolbar__group__unit__indicator toolbar__group__unit__indicator--avatar toolbar__group__unit__indicator--off"></i>
+					<div class="toolbar__group__unit__dropDownMenu toolbar__group__unit__dropDownMenu--off toolbar__group__unit__dropDownMenu--avatar">
+						<ul>
+							<li>Edit profile</li>
+							<li>Help</li>
+							<li>Log Out</li>
+						</ul>
+					</div>
+				</div>
+		</div>
+		<div class="toolbar__loader">
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script>
+		$(".toolbar__group__unit__link").on("click", function(evt) {
+
+			var toolbarGroup = $(this).parent(),
+				currentGroup = $(".toolbar__group__unit__indicator--on").parent();
+
+			$(".toolbar__group__unit__indicator--on").toggleClass("toolbar__group__unit__indicator--on");
+			$(".toolbar__group__unit__dropDownMenu--on").toggleClass("toolbar__group__unit__dropDownMenu--on");
+
+			if (toolbarGroup[0] === currentGroup[0]) return;
+
+			toolbarGroup.children(".toolbar__group__unit__indicator").toggleClass("toolbar__group__unit__indicator--on");
+			toolbarGroup.children(".toolbar__group__unit__dropDownMenu").toggleClass("toolbar__group__unit__dropDownMenu--on");
+		});
+	</script>
+</body>
+</html>
