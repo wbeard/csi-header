@@ -9,13 +9,28 @@
   margin: 0;
   padding: 10px;
 }
+.toolbar.toolbar--loading .toolbar__loadIndicator {
+  display: block;
+}
+.toolbar .toolbar__loadIndicator {
+  display: none;
+  margin: 0 auto;
+  text-align: center;
+}
 .toolbar .toolbar__group {
+  width: 33%;
   display: inline-block;
   *display: inline;
   zoom: 1;
   position: relative;
   ((null)): 0;
   ((null)): 0;
+}
+.toolbar .toolbar__group--last {
+  width: auto;
+}
+.toolbar .toolbar__group--left {
+  float: left;
 }
 .toolbar .toolbar__group__unit {
   box-sizing: border-box;
@@ -84,6 +99,9 @@
 .toolbar .toolbar__group__unit .toolbar__group__unit__dropDownMenu.toolbar__group__unit__dropDownMenu--on {
   display: block;
 }
+.toolbar .toolbar__group__unit .toolbar__group__unit__dropDownMenu.toolbar__group__unit__dropDownMenu--avatar {
+  height: auto;
+}
 .toolbar .toolbar__group__unit .toolbar__group__unit__dropDownMenu--apps {
   width: 350px;
 }
@@ -134,12 +152,28 @@
 .apps {
   text-align: center;
 }
-.apps .apps--app {
+.apps .apps__app {
   display: inline-block;
   *display: inline;
   zoom: 1;
+  padding: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
-.apps .apps--app i {
+.apps .apps__app:hover {
+  background: #27ae60;
+  color: #fff;
+}
+.apps .apps__app:hover i {
+  color: #fff;
+}
+.apps .apps__app .apps__app__appName {
+  font-family: 'Open-Sans', sans-serif;
+}
+.apps .apps__app i {
   color: #27ae60;
 }
 .apps .apps--me .apps--me__menu {

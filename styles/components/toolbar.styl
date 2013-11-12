@@ -11,9 +11,20 @@
 	background white
 	margin 0
 	padding 10px
+	&.toolbar--loading .toolbar__loadIndicator
+		display block
+	& .toolbar__loadIndicator
+		display none
+		margin 0 auto
+		text-align center
 	& .toolbar__group
+		width 33%
 		inline-block()
 		relative()
+	& .toolbar__group--last
+		width auto
+	& .toolbar__group--left
+		float left
 	& .toolbar__group__unit
 		box-sizing border-box
 		height 60px
@@ -63,6 +74,8 @@
 			display none
 			&.toolbar__group__unit__dropDownMenu--on
 				display block
+			&.toolbar__group__unit__dropDownMenu--avatar
+				height auto
 		& .toolbar__group__unit__dropDownMenu--apps
 			width 350px
 		& .toolbar__group__unit__link--logo
@@ -94,8 +107,17 @@
 		z-index -1
 .apps
 	text-align center
-	& .apps--app
+	& .apps__app
 		inline-block()
+		padding 5px
+		border-radius(3px)
+		&:hover
+			background success
+			color white
+			& i
+				color white
+		& .apps__app__appName
+			font-family 'Open-Sans', sans-serif
 		& i
 			color success
 	& .apps--me
