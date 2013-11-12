@@ -34,7 +34,7 @@
   display: inline-block;
   *display: inline;
   zoom: 1;
-  color: #27ae60;
+  color: #000;
   text-decoration: none;
   font-size: 16px;
   font-family: 'Open-Sans', sans-serif;
@@ -42,14 +42,8 @@
 .toolbar .toolbar__group__unit .toolbar__group__unit__link:hover {
   color: #145730;
 }
-.toolbar .toolbar__group__unit .toolbar__group__unit__link:hover .toolbar__group__unit__link__icon {
-  opacity: 0.75;
-}
-.toolbar .toolbar__group__unit .toolbar__group__unit__link .glyphicons-icon {
-  vertical-align: middle;
-  width: 36px;
-  margin: 0;
-  opacity: 0.5;
+.toolbar .toolbar__group__unit .toolbar__group__unit__link .fa {
+  color: #27ae60;
 }
 .toolbar .toolbar__group__unit .toolbar__group__unit__link .toolbar__group__unit__link__img {
   width: 60px;
