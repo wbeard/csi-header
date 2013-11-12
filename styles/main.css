@@ -53,6 +53,7 @@
   text-align: center;
   color: #e3e3e3;
   z-index: 999;
+  text-shadow: 0 0 3px #000;
   display: none;
 }
 .toolbar .toolbar__group__unit .toolbar__group__unit__indicator.toolbar__group__unit__indicator--on {
@@ -62,11 +63,13 @@
   position: relative;
   top: -25px;
   right: 15px;
+  z-index: 2;
 }
 .toolbar .toolbar__group__unit .toolbar__group__unit__dropDownMenu {
   position: absolute;
   width: 200px;
   height: 200px;
+  overflow-y: auto;
   background: #e3e3e3;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
@@ -127,6 +130,37 @@
   bottom: -2px;
   left: 0;
   z-index: -1;
+}
+.apps {
+  text-align: center;
+}
+.apps .apps--app {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.apps .apps--app i {
+  color: #27ae60;
+}
+.apps .apps--me .apps--me__menu {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+}
+.apps .apps--me .apps--me__menu .apps--me__menu__option {
+  font-family: 'Open-Sans', sans-serif;
+  font-size: 14px;
+  margin: 5px;
+  padding: 5px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+.apps .apps--me .apps--me__menu .apps--me__menu__option:hover {
+  color: #fff;
+  background-color: #27ae60;
 }
 .shadow_overlay {
   background-color: rgba(0,0,0,0.3);

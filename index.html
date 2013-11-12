@@ -4,7 +4,6 @@
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/main.css" />
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-	<link rel="stylesheet" href="styles/glyphicons/css/glyphicons.css" />
 </head>
 <body class="shadow_overlay">
 	<div class="toolbar">
@@ -20,7 +19,31 @@
 				<div class="apps toolbar__group__unit">
 					<a href="#" class="toolbar__group__unit__link"><i class="fa fa-th-large toolbar__group__unit__link__icon"></i> Apps</a>
 					<i class="fa fa-caret-up fa-3x toolbar__group__unit__indicator toolbar__group__unit__indicator--off"></i>
-					<div class="toolbar__group__unit__dropDownMenu toolbar__group__unit__dropDownMenu--off toolbar__group__unit__dropDownMenu--apps">
+					<div class="toolbar__group__unit__dropDownMenu toolbar__group__unit__dropDownMenu--off toolbar__group__unit__dropDownMenu--apps apps">
+						<figure class="apps--app">
+							<img src="img/dashboard-64.png" />
+							<figcaption>Dashboard</figcaption>
+						</figure>
+						<figure class="apps_app">
+							<i class="fa fa-shopping-cart fa-4x"></i>
+							<figcaption>Checkout</figcaption>
+						</figure>
+						<figure class="apps_app">
+							<i class="fa fa-reply fa-4x"></i>
+							<figcaption>Credit</figcaption>
+						</figure>
+						<figure class="apps_app">
+							<img src="img/dashboard-64.png" />
+							<figcaption>Checkout</figcaption>
+						</figure>
+						<figure class="apps_app">
+							<img src="img/dashboard-64.png" />
+							<figcaption>Dashboard</figcaption>
+						</figure>
+						<figure class="apps_app">
+							<img src="img/dashboard-64.png" />
+							<figcaption>Checkout</figcaption>
+						</figure>
 					</div>
 				</div>
 				<div class="settings toolbar__group__unit">
@@ -34,12 +57,14 @@
 						<img class="toolbar__group__unit__link--avatar__image toolbar__group__unit__link__img" src="https://s3.amazonaws.com/uifaces/faces/twitter/flashmurphy/128.jpg" />
 					</a>
 					<i class="fa fa-caret-up fa-3x toolbar__group__unit__indicator toolbar__group__unit__indicator--avatar toolbar__group__unit__indicator--off"></i>
-					<div class="toolbar__group__unit__dropDownMenu toolbar__group__unit__dropDownMenu--off toolbar__group__unit__dropDownMenu--avatar">
-						<ul>
-							<li>Edit profile</li>
-							<li>Help</li>
-							<li>Log Out</li>
-						</ul>
+					<div class="toolbar__group__unit__dropDownMenu toolbar__group__unit__dropDownMenu--off toolbar__group__unit__dropDownMenu--avatar apps">
+						<div class="apps--me">
+							<ul class="apps--me__menu">
+								<li class="apps--me__menu__option"><i class="fa fa-pencil fa-fw"></i> Edit profile</li>
+								<li class="apps--me__menu__option"><i class="fa fa-question fa-fw"></i> Help</li>
+								<li class="apps--me__menu__option"><i class="fa fa-unlink fa-fw"></i> Log Out</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 		</div>

@@ -41,6 +41,7 @@
 			text-align center
 			color #e3e3e3
 			z-index 999
+			text-shadow 0 0 3px black
 			display none
 			&.toolbar__group__unit__indicator--on
 				display block
@@ -48,10 +49,12 @@
 				position relative
 				top -25px
 				right 15px
+				z-index 2
 		& .toolbar__group__unit__dropDownMenu
 			position absolute
 			width 200px
 			height 200px
+			overflow-y auto
 			background #e3e3e3
 			border-radius(5px)
 			top 70px
@@ -89,5 +92,25 @@
 		bottom -2px
 		left 0
 		z-index -1
+.apps
+	text-align center
+	& .apps--app
+		inline-block()
+		& i
+			color success
+	& .apps--me
+		& .apps--me__menu
+			list-style none
+			text-align left
+			padding 0
+			& .apps--me__menu__option
+				font-family 'Open-Sans', sans-serif
+				font-size 14px
+				margin 5px
+				padding 5px
+				border-radius 3px
+				&:hover
+					color white
+					background-color success
 .shadow_overlay
 	background-radial-gradient(50% 50%, ellipse closest-corner, rgba(0,0,0,0.3), 1%, rgba(0,0,0,.5), 100%)
