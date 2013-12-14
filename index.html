@@ -3,15 +3,16 @@
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="styles/main.css" />
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 </head>
-<body class="shadow_overlay">
+<body class="app">
 	<div class="toolbar">
-		<div class="toolbar__group toolbar__group-left">
+		<div class="toolbar__group toolbar__group--left">
 			<div class="apps toolbar__group__unit">
 				<a href="#" class="toolbar__group__unit__link toolbar__group__unit__link--logo">
 					<img class="toolbar__group__unit__link__img" src="img/csiLogo.png" />
-					Dashboard
+					Project Christopher Lloyd
 				</a>
 			</div>
 		</div>
@@ -21,14 +22,16 @@
 			</div>
 		</div>
 		<div class="toolbar__group toolbar__group--right toolbar__group--last">
-				<div class="toolbar__group__unit">
+				<div class="toolbar__group__unit toolbar__group__unit--responsive">
 					<a href="#" class="toolbar__group__unit__link"><i class="fa fa-th-large toolbar__group__unit__link__icon"></i> Apps</a>
 					<i class="fa fa-caret-up fa-3x toolbar__group__unit__indicator toolbar__group__unit__indicator--off"></i>
 					<div class="toolbar__group__unit__dropDownMenu toolbar__group__unit__dropDownMenu--off toolbar__group__unit__dropDownMenu--apps apps">
-						<figure class="apps__app">
-							<img src="img/dashboard-64.png" />
-							<figcaption class="apps__app__appName">Dashboard</figcaption>
-						</figure>
+						<a href="index.html">
+							<figure class="apps__app">
+								<img src="img/dashboard-64.png" />
+								<figcaption class="apps__app__appName">Dashboard</figcaption>
+							</figure>
+						</a>
 						<figure class="apps__app">
 							<i class="fa fa-shopping-cart fa-4x"></i>
 							<figcaption class="apps__app__appName">Checkout</figcaption>
@@ -51,46 +54,123 @@
 						</figure>
 					</div>
 				</div>
-				<div class="settings toolbar__group__unit">
+				<div class="settings toolbar__group__unit toolbar__group__unit--responsive">
 					<a href="#" class="toolbar__group__unit__link"><i class="fa fa-cog toolbar__group__unit__link__icon"></i> Settings</a>
 					<i class="fa fa-caret-up fa-3x toolbar__group__unit__indicator toolbar__group__unit__indicator--off"></i>
-					<div class="toolbar__group__unit__dropDownMenu toolbar__group__unit__dropDownMenu--off toolbar__group__unit__dropDownMenu--settings">
+					<div class="toolbar__group__unit__dropDownMenu toolbar__group__unit__dropDownMenu--off toolbar__group__unit__dropDownMenu--settings toolbar__group__unit__dropDownMenu--autoHeight">
+						<ul class="dropDownMenu__menu">
+							<li class="dropDownMenu__menu__option"><i class="fa fa-user fa-fw"></i> Users</li>
+							<li class="dropDownMenu__menu__option"><i class="fa fa-barcode fa-fw"></i> Pay Types</li>
+							<li class="dropDownMenu__menu__option"><i class="fa fa-sitemap fa-fw"></i> Pay Categories</li>
+							<li class="dropDownMenu__menu__option"><i class="fa fa-group fa-fw"></i> Org Units</li>
+							<li class="dropDownMenu__menu__option"><i class="fa fa-money fa-fw"></i> Distribution Accounts</li>
+							<li class="dropDownMenu__menu__option"><i class="fa fa-code-fork fa-fw"></i> Integration</li>
+						</ul>
 					</div>
 				</div>
 				<div class="user toolbar__group__unit">
 					<a href="#" class="toolbar__group__unit__link toolbar__group__unit__link--avatar">
 						<img class="toolbar__group__unit__link--avatar__image toolbar__group__unit__link__img" src="https://s3.amazonaws.com/uifaces/faces/twitter/flashmurphy/128.jpg" />
 					</a>
+					<a href="#" class="toolbar__group__unit__link toolbar__group__unit__link--editAvatar">
+						<i class="toolbar__group__unit__link--editAvatar__icon fa fa-pencil" alt="Edit"></i>
+					</a>
 					<i class="fa fa-caret-up fa-3x toolbar__group__unit__indicator toolbar__group__unit__indicator--avatar toolbar__group__unit__indicator--off"></i>
-					<div class="toolbar__group__unit__dropDownMenu toolbar__group__unit__dropDownMenu--off toolbar__group__unit__dropDownMenu--avatar apps">
-						<div class="apps--me">
-							<ul class="apps--me__menu">
-								<li class="apps--me__menu__option"><i class="fa fa-pencil fa-fw"></i> Edit profile</li>
-								<li class="apps--me__menu__option"><i class="fa fa-question fa-fw"></i> Help</li>
-								<li class="apps--me__menu__option"><i class="fa fa-unlink fa-fw"></i> Log Out</li>
+					<div class="toolbar__group__unit__dropDownMenu toolbar__group__unit__dropDownMenu--off toolbar__group__unit__dropDownMenu--avatar apps toolbar__group__unit__dropDownMenu--autoHeight">
+						<ul class="dropDownMenu__menu">
+							<p class="dropDownMenu__menu__optionGroup--responsive__groupName">General</p>
+							<li class="dropDownMenu__menu__option"><i class="fa fa-pencil fa-fw"></i> Edit profile</li>
+							<li class="dropDownMenu__menu__option">
+								<a href="help.html"><i class="fa fa-question fa-fw"></i> Help</a>
+							</li>
+							<li class="dropDownMenu__menu__option"><i class="fa fa-sign-out fa-fw"></i> Log Out</li>
+							<ul class="dropDownMenu__menu__optionGroup--responsive">
+								<p class="dropDownMenu__menu__optionGroup--responsive__groupName">Apps</p>
+								<li class="dropDownMenu__menu__option">
+									<a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+								</li>
+								<li class="dropDownMenu__menu__option"><i class="fa fa-shopping-cart fa-fw"></i> Checkout</li>
+								<li class="dropDownMenu__menu__option"><i class="fa fa-reply fa-fw"></i> Credit</li>
 							</ul>
-						</div>
+							<ul class="dropDownMenu__menu__optionGroup--responsive">
+								<p class="dropDownMenu__menu__optionGroup--responsive__groupName">Settings</p>
+								<li class="dropDownMenu__menu__option"><i class="fa fa-user fa-fw"></i> Users</li>
+								<li class="dropDownMenu__menu__option"><i class="fa fa-barcode fa-fw"></i> Pay Types</li>
+								<li class="dropDownMenu__menu__option"><i class="fa fa-sitemap fa-fw"></i> Pay Categories</li>
+								<li class="dropDownMenu__menu__option"><i class="fa fa-group fa-fw"></i> Org Units</li>
+								<li class="dropDownMenu__menu__option"><i class="fa fa-money fa-fw"></i> Distribution Accounts</li>
+								<li class="dropDownMenu__menu__option"><i class="fa fa-code-fork fa-fw"></i> Integration</li>
+							</ul>
+						</ul>
 					</div>
 				</div>
 		</div>
 		<div class="toolbar__loader">
 		</div>
 	</div>
-	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
-	<script>
-		$(".toolbar__group__unit__link").on("click", function(evt) {
-
-			var toolbarGroup = $(this).parent(),
-				currentGroup = $(".toolbar__group__unit__indicator--on").parent();
-
-			$(".toolbar__group__unit__indicator--on").toggleClass("toolbar__group__unit__indicator--on");
-			$(".toolbar__group__unit__dropDownMenu--on").toggleClass("toolbar__group__unit__dropDownMenu--on");
-
-			if (toolbarGroup[0] === currentGroup[0]) return;
-
-			toolbarGroup.children(".toolbar__group__unit__indicator").toggleClass("toolbar__group__unit__indicator--on");
-			toolbarGroup.children(".toolbar__group__unit__dropDownMenu").toggleClass("toolbar__group__unit__dropDownMenu--on");
-		});
-	</script>
+	<div class="app__body">
+		<div class="app__body__sidebar">
+			<ul class="app__body__sidebar__menu">
+				<li class="app__body__sidebar__menu__option app__body__sidebar__menu__option--on" data-module="app__body__module--charges">
+					<i class="fa fa-copy fa-lg fa-fw"></i> <span alt="Pages" class="sidebar__menu__option__text">Pages</span> <i class="fa fa-caret-left fa-lg app__body__sidebar__menu__option__indicator"></i>
+				</li>
+				<li class="app__body__sidebar__menu__option" data-module="app__body__module--credits">
+					<i class="fa fa-table fa-lg fa-fw"></i> <span class="sidebar__menu__option__text">Templates</span> <i class="fa fa-caret-left fa-lg app__body__sidebar__menu__option__indicator"></i></li>
+				<li class="app__body__sidebar__menu__option" data-module="app__body__module--declines">
+					<i class="fa fa-users fa-lg fa-fw"></i> <span class="sidebar__menu__option__text">People</span> <i class="fa fa-caret-left fa-lg app__body__sidebar__menu__option__indicator"></i>
+				</li>
+				<li class="app__body__sidebar__menu__option" data-module="app__body__module--subscriptions">
+					<i class="fa fa-picture-o fa-lg fa-fw"></i> <span class="sidebar__menu__option__text">Media</span> <i class="fa fa-caret-left fa-lg app__body__sidebar__menu__option__indicator"></i>
+				</li>
+				<li class="app__body__sidebar__menu__option" data-module="app__body__module--subscriptions">
+					<i class="fa fa-css3 fa-lg fa-fw"></i> <span class="sidebar__menu__option__text">Styles</span> <i class="fa fa-caret-left fa-lg app__body__sidebar__menu__option__indicator"></i>
+				</li>
+				<li class="app__body__sidebar__menu__option" data-module="app__body__module--subscriptions">
+					<i class="fa fa-cogs fa-lg fa-fw"></i> <span class="sidebar__menu__option__text">Settings</span> <i class="fa fa-caret-left fa-lg app__body__sidebar__menu__option__indicator"></i>
+				</li>
+			</ul>
+		</div>
+		<div class="app__body__modules">
+			<div class="app__body__module app__body__module--charges app__body__module--on container">
+				<div class="app__body__module__header row">
+					<div class="col-md-6 col-lg-6 col-sm-4">
+						<a href="#" type="button" class="btn btn-default btn-spin">
+							<span class="fa-stack fa-stack-smaller">
+								<i class="fa fa-folder fa-stack-2x"></i>
+								<i class="fa fa-plus fa-upper-right"></i>
+							</span>
+						</a>
+						<a href="#" type="button" class="btn btn-default btn-spin">
+							<span class="fa-stack fa-stack-smaller">
+								<i class="fa fa-file-text fa-stack-2x"></i>
+								<i class="fa fa-plus fa-upper-right"></i>
+							</span>
+						</a>
+					</div>
+					<div class="col-md-6 col-lg-6 col-sm-8 hidden-xs pull-content-right">
+						<a href="#" type="button" class="btn btn-default">
+							<i class="fa fa-filter"></i>
+						</a>
+						<form class="navbar-form inline-block module__search" role="search">
+							<div class="form-group">
+							  <input type="text" class="form-control" placeholder="Search">
+							</div>
+							<button type="submit" class="btn btn-success"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+				</div>
+				<h3>Published</h3>
+				<div id="pages_head" class="app__body__module__body app__body__module__body--published row">
+				</div>
+			</div>
+			<div class="app__body__module app__body__module--credits">
+			</div>
+			<div class="app__body__module app__body__module--declines">
+			</div>
+			<div class="app__body__module app__body__module--subscriptions">
+			</div>
+		</div>
+	</div>
+	<script data-main="scripts/app" src="scripts/require.js"></script>
 </body>
 </html>

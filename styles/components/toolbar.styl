@@ -12,6 +12,7 @@
 	margin 0
 	padding 10px
 	box-shadow(0, 2px, 4px, #1f1f1f)
+	z-index 1
 	&.toolbar--loading .toolbar__loadIndicator
 		display block
 	& .toolbar__loadIndicator
@@ -26,6 +27,7 @@
 		width auto
 	& .toolbar__group--left
 		float left
+		overflow-y hidden			
 	& .toolbar__group__unit
 		box-sizing border-box
 		height 60px
@@ -33,6 +35,8 @@
 		margin 0 10px
 		cursor pointer
 		vertical-align top
+		& .toolbar__group__unit--responsive
+			display block
 		& .toolbar__group__unit__link
 			height 40px
 			line-height 60px
@@ -46,6 +50,8 @@
 				color lighten(black, 50%)
 			& .fa
 				color success
+				font-size 24px
+				vertical-align middle
 			& .toolbar__group__unit__link__img
 				width 60px
 				height 60px
@@ -76,10 +82,11 @@
 			display none
 			&.toolbar__group__unit__dropDownMenu--on
 				display block
-			&.toolbar__group__unit__dropDownMenu--avatar
+			&.toolbar__group__unit__dropDownMenu--autoHeight
 				height auto
 		& .toolbar__group__unit__dropDownMenu--apps
-			width 350px
+			padding 10px
+			width 300px
 		& .toolbar__group__unit__link--logo
 			vertical-align top
 			font-size 24px
@@ -93,6 +100,18 @@
 				absolute(top, left)
 				border-radius(5px)
 				z-index 2
+			&.avatar--empty
+				& + .toolbar__group__unit__link--editAvatar
+					display block
+		& .toolbar__group__unit__link--editAvatar
+			display none
+			absolute(bottom, right)
+			z-index 3
+			& .toolbar__group__unit__link--editAvatar__icon
+				color white
+				text-shadow 0 0 3px black
+				&:hover
+					color success
 		&:last-child
 			margin-right 0px
 		&:first-child
@@ -107,11 +126,12 @@
 		bottom -2px
 		left 0
 		z-index -1
-.apps
+
+.toolbar__group__unit__dropDownMenu
 	text-align center
 	& .apps__app
 		inline-block()
-		padding 5px
+		padding 15px
 		border-radius(3px)
 		&:hover
 			background success
@@ -122,19 +142,56 @@
 			font-family 'Open-Sans', sans-serif
 		& i
 			color success
-	& .apps--me
-		& .apps--me__menu
+	& .dropDownMenu__menu
 			list-style none
 			text-align left
 			padding 0
-			& .apps--me__menu__option
-				font-family 'Open-Sans', sans-serif
-				font-size 14px
-				margin 5px
-				padding 5px
-				border-radius 3px
-				&:hover
-					color white
-					background-color success
+			margin 2px
+			& > .dropDownMenu__menu__optionGroup--responsive__groupName
+				border 0px
+	& .dropDownMenu__menu__option
+		font-family 'Open-Sans', sans-serif
+		font-size 14px
+		margin 5px
+		padding 5px
+		border-radius 3px
+		& i
+			color lighten(black, 50%)
+		&:hover
+			color white
+			background-color success
+			& i
+				color white
+	& .dropDownMenu__menu__optionGroup--responsive
+		display none
+		list-style none
+		padding 0
+	& .dropDownMenu__menu__optionGroup--responsive__groupName
+		font-family 'Open-Sans', sans-serif
+		padding-left 12px
+		color lighten(black, 50%)
+		padding-top 5px
+		border-top solid 1px lighten(black, 50%)
+		margin 0
+		display none
+	
+			
+@media all and (max-width: 804px) and (min-width: 0px)
+	.toolbar__group__unit__dropDownMenu 
+		& .dropDownMenu__menu__optionGroup--responsive
+			display block
+		& .dropDownMenu__menu__optionGroup--responsive__groupName
+			display block
+	.toolbar .toolbar__group__unit--responsive
+		display none
+		
+@media all and (max-width: 600px) and (min-width: 0px)
+	.toolbar .toolbar__group
+		width 45%
+		&.toolbar__group--last
+			width auto
+	.toolbar .toolbar__group--center
+		display none
+
 .shadow_overlay
 	background-radial-gradient(50% 50%, ellipse closest-corner, rgba(0,0,0,0.3), 1%, rgba(0,0,0,.5), 100%)

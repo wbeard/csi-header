@@ -1,0 +1,213 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'requirejs' ]
+2 info using npm@1.2.15
+3 info using node@v0.10.1
+4 verbose read json /usr/local/lib/package.json
+5 verbose read json /usr/local/lib/package.json
+6 verbose cache add [ 'requirejs', null ]
+7 verbose cache add name=undefined spec="requirejs" args=["requirejs",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'requirejs',
+8 verbose parsed url   path: 'requirejs',
+8 verbose parsed url   href: 'requirejs' }
+9 silly lockFile f2b16c35-requirejs requirejs
+10 verbose lock requirejs /Users/williambeard/.npm/f2b16c35-requirejs.lock
+11 silly lockFile f2b16c35-requirejs requirejs
+12 silly lockFile f2b16c35-requirejs requirejs
+13 verbose addNamed [ 'requirejs', '' ]
+14 verbose addNamed [ null, '' ]
+15 silly lockFile e9b02655-requirejs requirejs@
+16 verbose lock requirejs@ /Users/williambeard/.npm/e9b02655-requirejs.lock
+17 silly addNameRange { name: 'requirejs', range: '', hasData: false }
+18 verbose url raw requirejs
+19 verbose url resolving [ 'https://registry.npmjs.org/', './requirejs' ]
+20 verbose url resolved https://registry.npmjs.org/requirejs
+21 info trying registry request attempt 1 at 19:59:21
+22 verbose etag "EZPPV11V656YHVO13K74ITOXU"
+23 http GET https://registry.npmjs.org/requirejs
+24 http 200 https://registry.npmjs.org/requirejs
+25 silly registry.get cb [ 200,
+25 silly registry.get   { vary: 'Accept',
+25 silly registry.get     server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+25 silly registry.get     etag: '"35UW2J4AMTBD8WVQFQWF3MGTK"',
+25 silly registry.get     date: 'Wed, 13 Nov 2013 01:59:22 GMT',
+25 silly registry.get     'content-type': 'application/json',
+25 silly registry.get     'content-length': '36471' } ]
+26 silly addNameRange number 2 { name: 'requirejs', range: '', hasData: true }
+27 silly addNameRange versions [ 'requirejs',
+27 silly addNameRange   [ '0.26.0',
+27 silly addNameRange     '0.27.0',
+27 silly addNameRange     '0.27.1',
+27 silly addNameRange     '1.0.0',
+27 silly addNameRange     '1.0.1',
+27 silly addNameRange     '1.0.2',
+27 silly addNameRange     '1.0.3',
+27 silly addNameRange     '1.0.4',
+27 silly addNameRange     '1.0.5',
+27 silly addNameRange     '1.0.6',
+27 silly addNameRange     '1.0.7',
+27 silly addNameRange     '1.0.8',
+27 silly addNameRange     '2.0.0',
+27 silly addNameRange     '2.0.1',
+27 silly addNameRange     '2.0.2',
+27 silly addNameRange     '2.0.3',
+27 silly addNameRange     '2.0.4',
+27 silly addNameRange     '2.0.5',
+27 silly addNameRange     '2.0.6',
+27 silly addNameRange     '2.1.0',
+27 silly addNameRange     '2.1.1',
+27 silly addNameRange     '2.1.2',
+27 silly addNameRange     '2.1.3',
+27 silly addNameRange     '2.1.4',
+27 silly addNameRange     '2.1.5',
+27 silly addNameRange     '2.1.6',
+27 silly addNameRange     '2.1.7',
+27 silly addNameRange     '2.1.8',
+27 silly addNameRange     '2.1.9' ] ]
+28 verbose addNamed [ 'requirejs', '2.1.9' ]
+29 verbose addNamed [ '2.1.9', '2.1.9' ]
+30 silly lockFile d131dabb-requirejs-2-1-9 requirejs@2.1.9
+31 verbose lock requirejs@2.1.9 /Users/williambeard/.npm/d131dabb-requirejs-2-1-9.lock
+32 silly lockFile cdb77b78-rg-requirejs-requirejs-2-1-9-tgz https://registry.npmjs.org/requirejs/-/requirejs-2.1.9.tgz
+33 verbose lock https://registry.npmjs.org/requirejs/-/requirejs-2.1.9.tgz /Users/williambeard/.npm/cdb77b78-rg-requirejs-requirejs-2-1-9-tgz.lock
+34 verbose addRemoteTarball [ 'https://registry.npmjs.org/requirejs/-/requirejs-2.1.9.tgz',
+34 verbose addRemoteTarball   '624e10d22863e8db9aebfb8f21809ca59da42344' ]
+35 info retry fetch attempt 1 at 19:59:22
+36 verbose fetch to= /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/tmp.tgz
+37 http GET https://registry.npmjs.org/requirejs/-/requirejs-2.1.9.tgz
+38 http 200 https://registry.npmjs.org/requirejs/-/requirejs-2.1.9.tgz
+39 silly shasum updated bytes 65536
+40 silly shasum updated bytes 65536
+41 silly shasum updated bytes 65536
+42 silly shasum updated bytes 22993
+43 info shasum 624e10d22863e8db9aebfb8f21809ca59da42344
+43 info shasum /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/tmp.tgz
+44 verbose tar unpack /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/tmp.tgz
+45 silly lockFile 3c5c300d-62374-0-3776732429396361-package /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/package
+46 verbose lock /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/package /Users/williambeard/.npm/3c5c300d-62374-0-3776732429396361-package.lock
+47 silly lockFile df7309bd-62374-0-3776732429396361-tmp-tgz /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/tmp.tgz
+48 verbose lock /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/tmp.tgz /Users/williambeard/.npm/df7309bd-62374-0-3776732429396361-tmp-tgz.lock
+49 silly gunzTarPerm modes [ '755', '644' ]
+50 silly gunzTarPerm extractEntry package.json
+51 silly gunzTarPerm extractEntry README.md
+52 silly gunzTarPerm extractEntry require.js
+53 silly gunzTarPerm extractEntry bin/r.js
+54 verbose read json /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/package/package.json
+55 silly lockFile 3c5c300d-62374-0-3776732429396361-package /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/package
+56 silly lockFile 3c5c300d-62374-0-3776732429396361-package /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/package
+57 silly lockFile df7309bd-62374-0-3776732429396361-tmp-tgz /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/tmp.tgz
+58 silly lockFile df7309bd-62374-0-3776732429396361-tmp-tgz /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/tmp.tgz
+59 verbose from cache /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/package/package.json
+60 verbose tar pack [ '/Users/williambeard/.npm/requirejs/2.1.9/package.tgz',
+60 verbose tar pack   '/var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/package' ]
+61 verbose tarball /Users/williambeard/.npm/requirejs/2.1.9/package.tgz
+62 verbose folder /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/package
+63 silly lockFile 3c5c300d-62374-0-3776732429396361-package /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/package
+64 verbose lock /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/package /Users/williambeard/.npm/3c5c300d-62374-0-3776732429396361-package.lock
+65 silly lockFile 10d1db16--npm-requirejs-2-1-9-package-tgz /Users/williambeard/.npm/requirejs/2.1.9/package.tgz
+66 verbose lock /Users/williambeard/.npm/requirejs/2.1.9/package.tgz /Users/williambeard/.npm/10d1db16--npm-requirejs-2-1-9-package-tgz.lock
+67 silly lockFile 3c5c300d-62374-0-3776732429396361-package /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/package
+68 silly lockFile 3c5c300d-62374-0-3776732429396361-package /var/folders/3m/n9yj3v512yv1l30kwb2812nh0000gn/T/npm-54029/1384307962374-0.3776732429396361/package
+69 silly lockFile 10d1db16--npm-requirejs-2-1-9-package-tgz /Users/williambeard/.npm/requirejs/2.1.9/package.tgz
+70 silly lockFile 10d1db16--npm-requirejs-2-1-9-package-tgz /Users/williambeard/.npm/requirejs/2.1.9/package.tgz
+71 silly lockFile 1e5f3b7e-eard-npm-requirejs-2-1-9-package /Users/williambeard/.npm/requirejs/2.1.9/package
+72 verbose lock /Users/williambeard/.npm/requirejs/2.1.9/package /Users/williambeard/.npm/1e5f3b7e-eard-npm-requirejs-2-1-9-package.lock
+73 silly lockFile 1e5f3b7e-eard-npm-requirejs-2-1-9-package /Users/williambeard/.npm/requirejs/2.1.9/package
+74 silly lockFile 1e5f3b7e-eard-npm-requirejs-2-1-9-package /Users/williambeard/.npm/requirejs/2.1.9/package
+75 verbose tar unpack /Users/williambeard/.npm/requirejs/2.1.9/package.tgz
+76 silly lockFile 1e5f3b7e-eard-npm-requirejs-2-1-9-package /Users/williambeard/.npm/requirejs/2.1.9/package
+77 verbose lock /Users/williambeard/.npm/requirejs/2.1.9/package /Users/williambeard/.npm/1e5f3b7e-eard-npm-requirejs-2-1-9-package.lock
+78 silly lockFile 10d1db16--npm-requirejs-2-1-9-package-tgz /Users/williambeard/.npm/requirejs/2.1.9/package.tgz
+79 verbose lock /Users/williambeard/.npm/requirejs/2.1.9/package.tgz /Users/williambeard/.npm/10d1db16--npm-requirejs-2-1-9-package-tgz.lock
+80 silly gunzTarPerm modes [ '755', '644' ]
+81 silly gunzTarPerm extractEntry package.json
+82 silly gunzTarPerm extractEntry README.md
+83 silly gunzTarPerm extractEntry require.js
+84 silly gunzTarPerm extractEntry bin/r.js
+85 verbose read json /Users/williambeard/.npm/requirejs/2.1.9/package/package.json
+86 silly lockFile 1e5f3b7e-eard-npm-requirejs-2-1-9-package /Users/williambeard/.npm/requirejs/2.1.9/package
+87 silly lockFile 1e5f3b7e-eard-npm-requirejs-2-1-9-package /Users/williambeard/.npm/requirejs/2.1.9/package
+88 silly lockFile 10d1db16--npm-requirejs-2-1-9-package-tgz /Users/williambeard/.npm/requirejs/2.1.9/package.tgz
+89 silly lockFile 10d1db16--npm-requirejs-2-1-9-package-tgz /Users/williambeard/.npm/requirejs/2.1.9/package.tgz
+90 silly shasum updated bytes 65536
+91 silly shasum updated bytes 65536
+92 silly shasum updated bytes 65536
+93 silly shasum updated bytes 22994
+94 info shasum b0b8dc171c7eb7f0257cf41022626fa061abcb6c
+94 info shasum /Users/williambeard/.npm/requirejs/2.1.9/package.tgz
+95 verbose from cache /Users/williambeard/.npm/requirejs/2.1.9/package/package.json
+96 verbose chmod /Users/williambeard/.npm/requirejs/2.1.9/package.tgz 644
+97 verbose chown /Users/williambeard/.npm/requirejs/2.1.9/package.tgz [ 501, 20 ]
+98 silly lockFile cdb77b78-rg-requirejs-requirejs-2-1-9-tgz https://registry.npmjs.org/requirejs/-/requirejs-2.1.9.tgz
+99 silly lockFile cdb77b78-rg-requirejs-requirejs-2-1-9-tgz https://registry.npmjs.org/requirejs/-/requirejs-2.1.9.tgz
+100 silly lockFile d131dabb-requirejs-2-1-9 requirejs@2.1.9
+101 silly lockFile d131dabb-requirejs-2-1-9 requirejs@2.1.9
+102 silly lockFile e9b02655-requirejs requirejs@
+103 silly lockFile e9b02655-requirejs requirejs@
+104 silly resolved [ { name: 'requirejs',
+104 silly resolved     description: 'Node adapter for RequireJS, for loading AMD modules. Includes RequireJS optimizer',
+104 silly resolved     version: '2.1.9',
+104 silly resolved     homepage: 'http://github.com/jrburke/r.js',
+104 silly resolved     author:
+104 silly resolved      { name: 'James Burke',
+104 silly resolved        email: 'jrburke@gmail.com',
+104 silly resolved        url: 'http://github.com/jrburke' },
+104 silly resolved     licenses: [ [Object], [Object] ],
+104 silly resolved     repository: { type: 'git', url: 'https://github.com/jrburke/r.js.git' },
+104 silly resolved     main: './bin/r.js',
+104 silly resolved     bin: { 'r.js': './bin/r.js' },
+104 silly resolved     engines: { node: '>=0.4.0' },
+104 silly resolved     readme: '# requirejs\n\nRequireJS for use in Node. includes:\n\n* r.js: the RequireJS optimizer, and AMD runtime for use in Node.\n* require.js: The browser-based AMD loader.\n\nMore information at http://requirejs.org\n\n',
+104 silly resolved     readmeFilename: 'README.md',
+104 silly resolved     _id: 'requirejs@2.1.9',
+104 silly resolved     dist: { shasum: 'b0b8dc171c7eb7f0257cf41022626fa061abcb6c' },
+104 silly resolved     _from: 'requirejs@',
+104 silly resolved     _resolved: 'https://registry.npmjs.org/requirejs/-/requirejs-2.1.9.tgz' } ]
+105 info install requirejs@2.1.9 into /usr/local/lib
+106 info installOne requirejs@2.1.9
+107 verbose from cache /Users/williambeard/.npm/requirejs/2.1.9/package/package.json
+108 info /usr/local/lib/node_modules/requirejs unbuild
+109 verbose read json /usr/local/lib/node_modules/requirejs/package.json
+110 verbose tar unpack /Users/williambeard/.npm/requirejs/2.1.9/package.tgz
+111 silly lockFile ce2a5f01-local-lib-node-modules-requirejs /usr/local/lib/node_modules/requirejs
+112 verbose lock /usr/local/lib/node_modules/requirejs /Users/williambeard/.npm/ce2a5f01-local-lib-node-modules-requirejs.lock
+113 silly lockFile 10d1db16--npm-requirejs-2-1-9-package-tgz /Users/williambeard/.npm/requirejs/2.1.9/package.tgz
+114 verbose lock /Users/williambeard/.npm/requirejs/2.1.9/package.tgz /Users/williambeard/.npm/10d1db16--npm-requirejs-2-1-9-package-tgz.lock
+115 silly gunzTarPerm modes [ '755', '644' ]
+116 error Error: EACCES, mkdir '/usr/local/lib/node_modules/requirejs'
+116 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/requirejs']
+116 error   errno: 3,
+116 error   code: 'EACCES',
+116 error   path: '/usr/local/lib/node_modules/requirejs',
+116 error   fstream_type: 'Directory',
+116 error   fstream_path: '/usr/local/lib/node_modules/requirejs',
+116 error   fstream_class: 'DirWriter',
+116 error   fstream_stack:
+116 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+116 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53',
+116 error      'Object.oncomplete (fs.js:107:15)' ] }
+117 error Please try running this command again as root/Administrator.
+118 error System Darwin 13.0.0
+119 error command "node" "/usr/local/bin/npm" "install" "-g" "requirejs"
+120 error cwd /Users/williambeard/Desktop/csi-toolbar/styles
+121 error node -v v0.10.1
+122 error npm -v 1.2.15
+123 error path /usr/local/lib/node_modules/requirejs
+124 error fstream_path /usr/local/lib/node_modules/requirejs
+125 error fstream_type Directory
+126 error fstream_class DirWriter
+127 error code EACCES
+128 error errno 3
+129 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/requirejs'
+130 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+130 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:37:53
+130 error fstream_stack Object.oncomplete (fs.js:107:15)
+131 verbose exit [ 3, true ]
